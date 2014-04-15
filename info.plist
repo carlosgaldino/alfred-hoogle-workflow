@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>carlosgaldino.hoogle</string>
+	<key>connections</key>
+	<dict>
+		<key>BE609916-78F1-4130-A2C8-6C34E93E9F9B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>167249C9-7326-4147-A5D5-C543087AB594</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Carlos Galdino (@carlosgaldino)</string>
+	<key>description</key>
+	<string>Search Hoogle</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Hoogle</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>hoogle</string>
+				<key>runningsubtext</key>
+				<string>Fetching results...</string>
+				<key>script</key>
+				<string>ruby script.rb "{query}"</string>
+				<key>title</key>
+				<string>Search Hoogle for '{query}'</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BE609916-78F1-4130-A2C8-6C34E93E9F9B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>167249C9-7326-4147-A5D5-C543087AB594</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>167249C9-7326-4147-A5D5-C543087AB594</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>BE609916-78F1-4130-A2C8-6C34E93E9F9B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/carlosgaldino/alfred-hoogle-workflow</string>
+</dict>
+</plist>
