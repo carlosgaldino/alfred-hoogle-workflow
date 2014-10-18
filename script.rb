@@ -11,7 +11,7 @@ def item_xml(options = {})
   ITEM
 end
 
-uri = URI.parse(URI.encode("http://www.haskell.org/hoogle/?mode=json&hoogle=#{ARGV.first}"))
+uri = URI.parse(URI.encode("http://www.haskell.org/hoogle/?mode=json&hoogle=#{ARGV.first}").gsub('+', '%2B'))
 
 response = JSON.parse(Net::HTTP.get(uri))
 
