@@ -25,7 +25,7 @@ arg = URI.escape(ARGV.first)
 
 substitutions.each { |k, v| arg.gsub!(k, v) }
 
-uri = URI.parse("http://www.haskell.org/hoogle/?mode=json&hoogle=#{arg}")
+uri = URI.parse("https://www.haskell.org/hoogle/?mode=json&hoogle=#{arg}")
 
 response = JSON.parse(Net::HTTP.get(uri))
 
